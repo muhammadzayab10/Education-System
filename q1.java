@@ -36,7 +36,7 @@ public class q1 {
 
 		Thread thread2 = new Thread(() -> {
 
-		synchronized (resource2) {
+		synchronized (resource3) {
 
 		System.out.println("Thread 2: Locked resource 2");
 
