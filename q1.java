@@ -3,13 +3,13 @@ package labex;
 public class q1 {
 	public static void main(String[] args) {
 
-		final Object resource1 = new Object();
+		final Object resource10 = new Object();
 		
-		final Object resource2 = new Object();
+		final Object resource20 = new Object();
 
 		Thread thread1 = new Thread(() -> {
 
-		synchronized (resource1) {
+		synchronized (resource10) {
 
 		System.out.println("Thread 1: Locked resource 1");
 
@@ -25,7 +25,7 @@ public class q1 {
 			
 		}
 		
-		synchronized (resource2) {
+		synchronized (resource20) {
 			System.out.println("Thread 1: Locked resource 2");
 
 		}
@@ -36,7 +36,7 @@ public class q1 {
 
 		Thread thread2 = new Thread(() -> {
 
-		synchronized (resource3) {
+		synchronized (resource) {
 
 		System.out.println("Thread 2: Locked resource 2");
 
@@ -52,7 +52,7 @@ public class q1 {
 
 		}
 
-		synchronized (resource1) {
+		synchronized (resource10) {
 
 		System.out.println("Thread 2: Locked resource 1");
 
