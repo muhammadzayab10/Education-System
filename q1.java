@@ -3,9 +3,9 @@ package labex;
 public class q1 {
 	public static void main(String[] args) {
 
-		final Object resource10 = new Object();
+		final Object resource1 = new Object();
 		
-		final Object resource20 = new Object();
+		final Object resource2 = new Object();
 
 		Thread thread1 = new Thread(() -> {
 
@@ -36,7 +36,7 @@ public class q1 {
 
 		Thread thread2 = new Thread(() -> {
 
-		synchronized (resource) {
+		synchronized (resource20) {
 
 		System.out.println("Thread 2: Locked resource 2");
 
